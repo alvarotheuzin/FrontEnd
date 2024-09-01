@@ -1,6 +1,6 @@
 'use client'
 
-import Pagina2 from "../components/Pagina2";
+import Pagina from "../components/Pagina";
 
 export default function Array() {
     const carros = ['corsa', 'Celta', 'Ferrari', 'Fusca', 'Cobalt']
@@ -8,7 +8,7 @@ export default function Array() {
 
 
     return (
-        <Pagina2 titulo="Array">
+        <Pagina titulo="Array">
 
             {pessoas.map(item => (
                 <p>{item}</p>
@@ -24,7 +24,7 @@ export default function Array() {
                 ))}
             </ul>
 
-        </Pagina2>
+        </Pagina>
 
     )
 }

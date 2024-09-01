@@ -1,13 +1,13 @@
 import { Alert, Container } from "react-bootstrap";
 import Cabecalho from "../components/Cabecalho";
 import Link from "next/link";
-import Pagina2 from "../components/Pagina2";
+import Pagina from "../components/Pagina";
 
 export default function Fundamentos(){
 
 
     return (
-        <Pagina2 titulo="Fundamentos">
+        <Pagina titulo="Fundamentos">
             <Cabecalho titulo="Fundamentos"/>
 
             <Container>
@@ -20,6 +20,6 @@ export default function Fundamentos(){
                 <Cabecalho titulo="FIM" />
             </Container>
             <Link href="/">Página Inicial</Link><br />
-        </Pagina2>
+        </Pagina>
     )
 }

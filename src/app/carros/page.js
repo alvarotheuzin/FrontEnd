@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import Pagina2 from "../components/Pagina2";
+import Pagina from "../components/Pagina";
 import Cardcarros from "../components/Cardcarros";
 
 const cars = [
@@ -44,7 +44,7 @@ const cars = [
 
 export default function carros() {
     return (
-      <Pagina2 titulo="Carros">
+      <Pagina titulo="Carros">
         <main>
         <Container className="d-flex flex-wrap justify-content-start" style={{ gap: '10px' }}>
             {cars.map((car, index) => (
@@ -60,7 +60,7 @@ export default function carros() {
              </Container>
 
         </main>
-      </Pagina2>
+      </Pagina>
     );
   }
 

@@ -1,22 +1,22 @@
 'use client'
 
 import { useState } from "react";
-import Pagina2 from "../components/Pagina2";
+import Pagina from "../components/Pagina";
 import { Button } from "react-bootstrap";
 
 export default function page() {
 
-    const [nome, setNome] = useState(0)
-    function alterarNome(operacao) {
-        const novoNome = operacao === '+' ? nome + 1 : nome - 1;
-        setNome(novoNome)
+    const [numero, setNumero] = useState(0)
+    function alterarNumero(operacao) {
+        const novoNumero = operacao === '+' ? numero + 1 : numero - 1;
+        setNumero(novoNumero)
     }
     return (
-        <Pagina2 titulo="Número">
-            <Button onClick={() => alterarNome('-')}>-</Button>
-            <h1>{nome}</h1>
-            <Button onClick={() => alterarNome('+')}>+</Button>
-        </Pagina2>
+        <Pagina titulo="Número">
+            <Button onClick={() => alterarNumero('-')}>-</Button>
+            <h1>{numero}</h1>
+            <Button onClick={() => alterarNumero('+')}>+</Button>
+        </Pagina>
 
     )
 }
